@@ -1,0 +1,12 @@
+services:
+  flask-app:
+    build: ./docker-flask
+    container_name: flask-service
+    ports:
+      - "5001:5000"
+
+  express-app:
+    build: ./docker-express
+    container_name: express-service
+    ports:
+      - "3007:3000"
